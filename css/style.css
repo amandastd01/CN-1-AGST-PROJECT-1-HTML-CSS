@@ -3,15 +3,18 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f2f2f2;
 }
+/* MISAL KALAU ADA ID=PROFILE NAH PAS MENUNYA DI KLIK DIA KAYA NGESCROLL GITU LANGSUNG KE HALAMAN YANG DI TUJU */
+html {
+  scroll-behavior: smooth;
+}
+
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-}
-.test{
   margin: 0;
 }
 
@@ -81,6 +84,7 @@ textarea {
 
 .section-title {
   background-color: #010103;
+  width: 100%;
 }
 
 .section-title h1 {
@@ -117,6 +121,7 @@ textarea {
   background-color: #dedede;
   padding: 50px 0px;
 }
+
 .media {
   display: flex;
   gap: 15px;
@@ -126,4 +131,46 @@ textarea {
   padding-top: 30px;
   /* background-color: #d98989; */
   padding-bottom: 30px;
+}
+/* SCREEN LEBIH DARI 1400PX */
+@media (min-width: 1400px) {
+  body {
+    background: #000;
+  }
+}
+/* SCREEN MAX DARI 1400PX */
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+  .container {
+    padding: 50px 30px;
+  }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+  .media {
+    flex-direction: column;
+  }
+  .media img,
+  .media iframe {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .section-menu {
+    display: none;
+  }
+}
+.mobile-menu-icon {
+  font-size: 50px;
+}
+@media (min-width: 576px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+}
+/* panggil id */
+#profil34e {
+  max-width: 0;
 }
